@@ -27,7 +27,9 @@
   --light-grayish-blue: hsl(240, 5%, 91%);
 }
 
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -52,7 +54,7 @@ body {
 .card {
   max-width: 98%;
   width: 950px;
-  height: 500px;
+  height: 525px;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   display: flex;
@@ -98,18 +100,21 @@ body {
 }
 
 .faq-content {
-  width: 50%;
-  padding: 60px 80px 80px 0;
+  flex: 1;
 }
 
 .faq-content h2 {
   font-size: 2rem;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+.faq {
+  padding: 70px 80px 80px 0;
 }
 
 .faq-control {
   border-bottom: 1px solid var(--light-grayish-blue);
-  padding-bottom: 45px;
+  padding-bottom: 60px;
   position: relative;
   color: var(--dark-grayish-blue);
 }
@@ -136,7 +141,7 @@ body {
 
 .faq-control .question {
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 700;
   padding: 20px 0;
   color: var(--very-dark-grayish-blue);
@@ -153,8 +158,9 @@ body {
 
 .faq-control .answer {
   position: absolute;
-  font-size: 0.68rem;
-  line-height: 15px;
+  font-size: 0.84rem;
+  line-height: 20px;
+  padding-right: 20px;
 }
 
 .faq .attribution {
@@ -168,7 +174,11 @@ body {
   visibility: hidden;
 }
 
-@media (max-width: 920px) {
+.image-container {
+  flex: 1;
+}
+
+@media (max-width: 950px) {
   .card {
     width: 320px;
     display: flex;
