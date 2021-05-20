@@ -213,7 +213,8 @@ body {
   }
 
   .faq h2 {
-    top: -42px;
+    color: var(--very-dark-desaturated-blue);
+    top: -46px;
     left: 99px;
     position: absolute;
     z-index: 7;
@@ -221,7 +222,7 @@ body {
   }
 
   .faq-control {
-    padding-bottom: 50px;
+    padding-bottom: 57px;
   }
 
   .faq-control .question {
@@ -232,6 +233,7 @@ body {
   .faq-control .answer {
     font-size: 0.75rem;
     line-height: 19px;
+    padding-right: 23px;
   }
 
   .card::after {
@@ -241,9 +243,5 @@ body {
   .faq-content {
     width: 100%;
     padding: 25px;
-  }
-
-  .faq-content h2 {
-    text-align: center;
   }
 }
