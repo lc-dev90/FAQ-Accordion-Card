@@ -60,43 +60,30 @@ body {
   display: flex;
 }
 
-.image-content {
-  width: 50%;
+.image-container {
   position: relative;
-}
-
-.porra {
-  width: 120%;
-  height: 100%;
   overflow: hidden;
 }
 
-.background {
-  width: 100%;
-  height: 100%;
+.image-container::before {
   position: absolute;
-  overflow: hidden;
+  content: url(./images/illustration-woman-online-desktop.svg);
+  z-index: 4;
+  width: 472px;
+  height: 359px;
+  left: -70px;
+  top: 83px;
 }
 
-.background img {
-  width: 200%;
-  transform: translateX(-500px) translateY(-200px);
-}
-
-.img-woman {
-  overflow: hidden;
-  width: 120%;
-  height: 100%;
-  transform: translateX(-170px) translateY(-10px) scale(0.95);
-  background: url(./images/illustration-woman-online-desktop.svg) no-repeat
-    center center;
-}
-
-.box {
+.image-container::after {
   position: absolute;
-  top: 90px;
-  left: -50px;
-  z-index: 2104324324123432;
+  content: url(./images/bg-pattern-desktop.svg);
+  z-index: 1;
+  width: 966px;
+  height: 945px;
+  left: -595px;
+  top: -281px;
+  transform: scale(1.07);
 }
 
 .faq-content {
