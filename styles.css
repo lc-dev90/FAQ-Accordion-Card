@@ -61,6 +61,10 @@ body {
   position: relative;
 }
 
+.card h2 {
+  display: none;
+}
+
 .card::after {
   position: absolute;
   content: url(./images/illustration-box-desktop.svg);
@@ -180,6 +184,18 @@ body {
     display: flex;
     flex-direction: column;
     transform: translateY(50px);
+    position: relative;
+  }
+
+  .card h2 {
+    display: block;
+    position: absolute;
+    color: var(--very-dark-desaturated-blue);
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 7;
+    font-size: 2rem;
   }
 
   .image-container {
@@ -190,7 +206,8 @@ body {
     position: absolute;
     content: url(./images/illustration-woman-online-mobile.svg);
     z-index: 4;
-    width: 100%;
+    width: 266px;
+    height: 166px;
     left: 7px;
     top: -107px;
   }
@@ -219,10 +236,12 @@ body {
     position: absolute;
     z-index: 7;
     font-size: 2rem;
+    display: none;
   }
 
   .faq-control {
     padding-bottom: 57px;
+    pointer-events: all;
   }
 
   .faq-control img {
@@ -247,5 +266,7 @@ body {
   .faq-content {
     width: 100%;
     padding: 25px;
+    pointer-events: none;
+    flex: none;
   }
 }
