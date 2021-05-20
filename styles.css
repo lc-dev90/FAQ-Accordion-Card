@@ -225,6 +225,10 @@ body {
     padding-bottom: 57px;
   }
 
+  .faq-control img {
+    right: 0px;
+  }
+
   .faq-control .question {
     padding: 15px 0;
     font-size: 0.83rem;
