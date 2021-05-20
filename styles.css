@@ -54,7 +54,7 @@ body {
 .card {
   max-width: 98%;
   width: 950px;
-  height: 525px;
+  height: 510px;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   display: flex;
