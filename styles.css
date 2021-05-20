@@ -112,6 +112,11 @@ body {
   padding: 70px 80px 80px 0;
 }
 
+.faq h2 {
+  display: block;
+  color: var(--very-dark-desaturated-blue);
+}
+
 .faq-control {
   border-bottom: 1px solid var(--light-grayish-blue);
   padding-bottom: 60px;
