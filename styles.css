@@ -183,12 +183,102 @@ body {
   flex: 1;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1024px) {
+  .card {
+    max-width: 98%;
+    width: 90%;
+    height: 475px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+  }
+
+  .image-container::before {
+    position: absolute;
+    content: url(./images/illustration-woman-online-desktop.svg);
+    z-index: 4;
+    width: 472px;
+    height: 359px;
+    left: -98px;
+    top: 83px;
+    transform: scale(0.75);
+  }
+
+  .image-container::after {
+    position: absolute;
+    content: url(./images/bg-pattern-desktop.svg);
+    z-index: 1;
+    width: 966px;
+    height: 945px;
+    left: -595px;
+    top: -281px;
+    transform: scale(0.9);
+  }
+
+  .faq {
+    padding: 70px 50px 80px 0;
+  }
+
+  .faq-control {
+    padding-bottom: 60px;
+  }
+
+  .faq-control .question {
+    padding: 16px 0;
+  }
+
+  .faq-control .answer {
+    font-size: 0.71rem;
+  }
+
+  .card::after {
+    top: 212px;
+    left: -92px;
+  }
+}
+
+@media (max-width: 760px) {
+  .faq {
+    padding: 60px 30px 50px 0;
+  }
+
+  .image-container::after {
+    transform: scale(0.7);
+    left: -553px;
+    top: -260px;
+  }
+  .image-container::before {
+    transform: scale(0.65);
+    left: -124px;
+    top: 78px;
+  }
+
+  .card {
+    height: 450px;
+  }
+
+  .card::after {
+    transform: scale(0.68);
+    top: 197px;
+    left: -92px;
+  }
+
+  .faq-content {
+    transform: scale() translateY();
+  }
+
+  .faq-control .question {
+    font-size: 0.84rem;
+  }
+}
+
+@media (max-width: 655px) {
   .card {
     width: 320px;
+    height: 500px;
     display: flex;
     flex-direction: column;
-    transform: translateY(50px);
     position: relative;
   }
 
@@ -196,7 +286,7 @@ body {
     display: block;
     position: absolute;
     color: var(--very-dark-desaturated-blue);
-    top: 140px;
+    top: 130px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 7;
@@ -215,6 +305,7 @@ body {
     height: 166px;
     left: 7px;
     top: -107px;
+    transform: scale(0.99);
   }
 
   .image-container::after {
@@ -231,7 +322,7 @@ body {
   .faq {
     position: relative;
     padding: 0px;
-    transform: translateY(-35px);
+    transform: translateY(-5px);
   }
 
   .faq h2 {
